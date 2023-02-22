@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/icon_lichhen"
+        android:icon="@drawable/icon_datlich"
+        android:title="@string/action_lichhen"
+        />
+    <item
+        android:id="@+id/icon_bacsi"
+        android:icon="@drawable/bacsi"
+        android:title="@string/action_bacsi"
+        />
+</menu>

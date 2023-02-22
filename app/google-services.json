@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "145954629465",
+    "firebase_url": "https://appnhikhoa-default-rtdb.firebaseio.com",
+    "project_id": "appnhikhoa",
+    "storage_bucket": "appnhikhoa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145954629465:android:e407397befe356a788ce48",
+        "android_client_info": {
+          "package_name": "com.example.appnhikhoa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145954629465-vmim0d6g8k5oj4vrag4qjuum69ihrgbv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appnhikhoa",
+            "certificate_hash": "f0ce42a3f029a83b3d2c14c8ba9987ac2d490e17"
+          }
+        },
+        {
+          "client_id": "145954629465-49as3uh23ggb70ckemp8ktnvfr7k783j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaabzD9EAsHSIi4GF4bA5JiWvKouim_2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145954629465-49as3uh23ggb70ckemp8ktnvfr7k783j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
