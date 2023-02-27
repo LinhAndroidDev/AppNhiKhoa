@@ -17,6 +17,7 @@ import com.example.appnhikhoa.model.CheckShowTutorial
 import com.example.appnhikhoa.ui.login.MainActivity
 import kotlinx.android.synthetic.main.activity_giao_dien.*
 
+@Suppress("DEPRECATION")
 class GiaoDien : BaseActivity() {
     var SHOW_TUTORIAL : String ="SHOW_TUTORIAL"
     lateinit var checkShowTutorial : CheckShowTutorial
@@ -90,7 +91,7 @@ class GiaoDien : BaseActivity() {
     }
 
     fun replaceFragment(fragment: Fragment) {
-        var transaction:FragmentTransaction = supportFragmentManager.beginTransaction()
+        val transaction:FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.ChangeFragment,fragment)
         transaction.commit()
     }

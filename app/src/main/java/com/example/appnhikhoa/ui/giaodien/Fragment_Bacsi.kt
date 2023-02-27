@@ -89,9 +89,9 @@ class Fragment_Bacsi : Fragment() {
                     response: Response<List<NhanVien>>,
                 ) {
                     var listNhanVien = mutableListOf<NhanVien>()
-                    listNhanVien = response.body() as MutableList<NhanVien>
-                    var listNhanVienAdapter : NhanVienAdapter = NhanVienAdapter(listNhanVien,requireActivity())
-                    if(listNhanVienAdapter != null) {
+                    if(recycleViewListNhanVien != null) {
+                        listNhanVien = response.body() as MutableList<NhanVien>
+                        val listNhanVienAdapter : NhanVienAdapter = NhanVienAdapter(listNhanVien,requireActivity())
                         recycleViewListNhanVien.adapter = listNhanVienAdapter
                     }
                 }
@@ -106,9 +106,9 @@ class Fragment_Bacsi : Fragment() {
             .enqueue(object : Callback<List<GiamDoc>> {
                 override fun onResponse(call: Call<List<GiamDoc>>, response: Response<List<GiamDoc>>) {
                     var listGiamDoc = mutableListOf<GiamDoc>()
-                    listGiamDoc = response.body() as MutableList<GiamDoc>
-                    var listGiamDocAdapter : GiamDocAdapter = GiamDocAdapter(listGiamDoc,requireActivity())
-                    if(listGiamDocAdapter != null) {
+                    if(recycleViewListGiamDoc != null) {
+                        listGiamDoc = response.body() as MutableList<GiamDoc>
+                        val listGiamDocAdapter : GiamDocAdapter = GiamDocAdapter(listGiamDoc,requireActivity())
                         recycleViewListGiamDoc.adapter = listGiamDocAdapter
                         loadDoctor.visibility = View.INVISIBLE
                     }

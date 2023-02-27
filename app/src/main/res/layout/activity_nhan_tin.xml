@@ -15,7 +15,7 @@
             android:id="@+id/toolBarNhanTin"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/background"
+            android:background="@drawable/bg_main"
             app:title="Nhắn tin"
             app:titleTextColor="#FFFFFF" />
         <androidx.recyclerview.widget.RecyclerView

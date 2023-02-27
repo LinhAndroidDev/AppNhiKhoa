@@ -2,14 +2,15 @@ package com.example.appnhikhoa.ui.login
 
 import android.content.ContentValues.TAG
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowManager
 import android.widget.Toast
 import com.example.appnhikhoa.ui.giaodien.GiaoDien
 import com.example.appnhikhoa.R
 import com.example.appnhikhoa.model.BaseActivity
 import com.example.appnhikhoa.model.CheckShowTutorial
+import com.example.appnhikhoa.ui.doctor.LoginWithDoctor
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,6 +25,10 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
         checkShowTutorial = CheckShowTutorial(this@MainActivity)
 
         checkShowTutorial.putBooleanValue(SHOW_TUTORIAL,false)
@@ -31,7 +36,13 @@ class MainActivity : BaseActivity() {
         login.setOnClickListener {
 //            var strPhoneNumber:String = account.text.toString()
 //            onClickDangNhap(strPhoneNumber)
-            var intent:Intent = Intent(this@MainActivity, GetOTP::class.java)
+            val intent:Intent = Intent(this@MainActivity, GetOTP::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        loginWithDoctor.setOnClickListener{
+            val intent : Intent = Intent(this, LoginWithDoctor::class.java)
             startActivity(intent)
             finish()
         }

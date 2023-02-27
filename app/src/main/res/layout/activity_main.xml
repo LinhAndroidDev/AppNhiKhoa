@@ -1,55 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:background="@drawable/bg_main"
     tools:context=".ui.login.MainActivity">
 
-    <ImageView
-        android:background="@drawable/fewgewg"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="10dp"/>
-    <TextView
-        android:text="Nhi Khoa 123"
-        android:textSize="25dp"
-        android:textColor="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:background="@drawable/fewgewg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:text="Nhi Khoa 123"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="Nhập số điện thoại:"
-        android:layout_marginTop="50dp"
-        android:textSize="20dp"
-        android:textColor="#FFFFFF"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Nhập số điện thoại:"
+            android:layout_marginTop="50dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/account"
-        android:textSize="20dp"
-        android:text="+84"
-        android:padding="10dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/account"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/account"
+            android:textSize="18sp"
+            android:text="+84"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+        <ToggleButton
+            android:id="@+id/login"
+            android:textOn="Đăng nhập"
+            android:textOff="Đăng nhập"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:background="@drawable/login"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone" />
-    <ToggleButton
-        android:id="@+id/login"
-        android:textOn="Đăng nhập"
-        android:textOff="Đăng nhập"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        android:background="@drawable/login"
-        android:layout_marginTop="40dp"
-        android:paddingHorizontal="90dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+        <TextView
+            android:text="Đăng nhập với Bác Sĩ?"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/loginWithDoctor"
+            android:layout_marginStart="7dp"
+            android:text="Đăng nhập"
+            android:textColor="#FFEB3B"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

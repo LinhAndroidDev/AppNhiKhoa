@@ -10,7 +10,7 @@
         android:id="@+id/toolBarGiaoDien"
         app:title="Lịch hẹn"
         app:titleTextColor="#FFFFFF"
-        android:background="@color/background"
+        android:background="@drawable/bg_main"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         />
