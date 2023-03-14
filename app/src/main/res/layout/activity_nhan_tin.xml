@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layoutNhanTin"
-    tools:context=".ui.component.NhanTin">
+    tools:context=".ui.giaodien.component.NhanTin">
     <LinearLayout
         android:layout_above="@+id/layout"
         android:layout_width="match_parent"

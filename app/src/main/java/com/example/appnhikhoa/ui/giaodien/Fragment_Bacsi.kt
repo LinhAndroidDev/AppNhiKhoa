@@ -15,8 +15,8 @@ import com.example.appnhikhoa.adapter.NhanVienAdapter
 import com.example.appnhikhoa.api.ApiServer
 import com.example.appnhikhoa.model.GiamDoc
 import com.example.appnhikhoa.model.NhanVien
-import com.example.appnhikhoa.ui.component.DatLich
-import com.example.appnhikhoa.ui.component.NhanTin
+import com.example.appnhikhoa.ui.giaodien.component.DatLich
+import com.example.appnhikhoa.ui.giaodien.component.NhanTin
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.squareup.picasso.Picasso
@@ -74,15 +74,15 @@ class Fragment_Bacsi : Fragment() {
     }
 
     private fun getData() {
-        var gson : Gson = GsonBuilder().create()
+        val gson : Gson = GsonBuilder().create()
 
-        var retrofit : ApiServer = Retrofit.Builder()
-            .baseUrl("https://firebasestorage.googleapis.com/v0/b/realtime-64f58.appspot.com/o/")
+        val retrofit : ApiServer = Retrofit.Builder()
+            .baseUrl("http://192.168.1.5/appnhikhoa/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiServer::class.java)
 
-        retrofit.getListNhanVien("media","bf949008-aca8-4ec8-acb7-e2d578513344")
+        retrofit.getListNhanVien()
             .enqueue(object : Callback<List<NhanVien>> {
                 override fun onResponse(
                     call: Call<List<NhanVien>>,
@@ -102,7 +102,7 @@ class Fragment_Bacsi : Fragment() {
 
             })
 
-        retrofit.getListGiamDoc("media","9a3ecbd1-c8c4-43bd-a3d1-4dd2d37267658")
+        retrofit.getListGiamDoc()
             .enqueue(object : Callback<List<GiamDoc>> {
                 override fun onResponse(call: Call<List<GiamDoc>>, response: Response<List<GiamDoc>>) {
                     var listGiamDoc = mutableListOf<GiamDoc>()

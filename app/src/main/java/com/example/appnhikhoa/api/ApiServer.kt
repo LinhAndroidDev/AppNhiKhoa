@@ -14,9 +14,9 @@ interface ApiServer {
     //https://firebasestorage.googleapis.com/v0/b/realtime-64f58.appspot.com/o/listgiamdocUpdate.json?alt=media&token=547b55ec-2252-4db3-99b8-25a4aaf9b0e1
     //https://firebasestorage.googleapis.com/v0/b/realtime-64f58.appspot.com/o/listnhanvienUpdate.json?alt=media&token=0b45855b-6337-4131-bcce-ef5df9dae2a1
 
-    @GET("listnhanvien.json")
-    fun getListNhanVien(@Query("alt") alt : String,@Query("token") token : String):Call<List<NhanVien>>
+    @GET("nhanvien.php")
+    fun getListNhanVien():Call<List<NhanVien>>
 
-    @GET("listgiamdoc.json")
-    fun getListGiamDoc(@Query("alt") alt : String,@Query("token") token : String):Call<List<GiamDoc>>
+    @GET("giamdoc.php")
+    fun getListGiamDoc():Call<List<GiamDoc>>
 }

@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.doctor.FragmentNhanVien"
-    android:gravity="center">
-
-    <TextView
-        android:text="Danh sách nhân viên"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#111"
+    tools:context=".ui.doctor.FragmentNhanVien">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addDoctor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        android:focusable="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="Danh sách nhân viên phòng khám"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/editListNhanVien"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</RelativeLayout>

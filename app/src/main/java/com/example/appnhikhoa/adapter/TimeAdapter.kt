@@ -13,7 +13,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appnhikhoa.R
 import com.example.appnhikhoa.model.Time
-import com.example.appnhikhoa.ui.component.DatLich
+import com.example.appnhikhoa.ui.giaodien.component.DatLich
 import kotlinx.android.synthetic.main.layout_inforpatient.*
 
 class TimeAdapter(val listTime: List<Time>,val context: Context)

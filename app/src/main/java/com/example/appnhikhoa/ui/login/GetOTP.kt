@@ -37,9 +37,9 @@ class GetOTP : BaseActivity() {
         GetDataIntent()
 
         NhapOTP.setOnClickListener {
-//            var strNhapOTP:String = otp.text.toString().trim()
+//            val strNhapOTP:String = otp.text.toString().trim()
 //            onClickNhapOTP(strNhapOTP)
-            var intent:Intent = Intent(this@GetOTP, GiaoDien::class.java)
+            val intent:Intent = Intent(this@GetOTP, GiaoDien::class.java)
             startActivity(intent)
             finish()
         }
@@ -68,7 +68,8 @@ class GetOTP : BaseActivity() {
                     }
                 } else {
                     // Sign in failed, display a message and update the UI
-                    Log.w(ContentValues.TAG, "signInWithCredential:failure", task.exception)
+//                    Log.w(ContentValues.TAG, "signInWithCredential:failure", task.exception)
+                    Log.d("FireBase", task.exception.toString())
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
                         // The verification code entered was invalid
                         Toast.makeText(this@GetOTP,"Error", Toast.LENGTH_SHORT).show()

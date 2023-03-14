@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.component.DatLich">
+    tools:context=".ui.giaodien.component.DatLich">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBarDatLich"
         app:title="Đặt Lịch"

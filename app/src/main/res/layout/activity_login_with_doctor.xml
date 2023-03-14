@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_bv"
+    android:background="@drawable/image_bv"
     tools:context=".ui.doctor.LoginWithDoctor"
     android:gravity="center">
     <androidx.cardview.widget.CardView
@@ -32,20 +32,34 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <EditText
+                    android:id="@+id/edtAccountDoctor"
                     android:hint="Tài khoản"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"/>
-                <EditText
-                    android:layout_marginTop="20dp"
-                    android:hint="Mật khẩu"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"/>
+                    android:layout_marginTop="20dp">
+                    <EditText
+                        android:id="@+id/edtPasswordDoctor"
+                        android:hint="Mật khẩu"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"/>
+                    <ImageView
+                        android:id="@+id/showPassword"
+                        android:background="@drawable/icon_hint_grey"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

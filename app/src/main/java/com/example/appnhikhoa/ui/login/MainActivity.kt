@@ -44,7 +44,6 @@ class MainActivity : BaseActivity() {
         loginWithDoctor.setOnClickListener{
             val intent : Intent = Intent(this, LoginWithDoctor::class.java)
             startActivity(intent)
-            finish()
         }
     }
 

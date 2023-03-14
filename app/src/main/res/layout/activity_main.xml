@@ -20,16 +20,16 @@
             android:layout_marginBottom="10dp"/>
         <TextView
             android:text="Nhi Khoa 123"
-            android:textSize="25dp"
-            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:text="Nhập số điện thoại:"
             android:layout_marginTop="50dp"
-            android:textSize="14dp"
-            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textColor="@color/white"
             android:layout_width="270dp"
             android:layout_height="wrap_content"/>
 
@@ -49,10 +49,10 @@
             android:textOn="Đăng nhập"
             android:textOff="Đăng nhập"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textAllCaps="false"
             android:background="@drawable/login"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="25dp"
             android:paddingHorizontal="90dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -67,7 +67,7 @@
         <TextView
             android:text="Đăng nhập với Bác Sĩ?"
             android:textColor="@color/white"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textStyle="italic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -76,7 +76,7 @@
             android:layout_marginStart="7dp"
             android:text="Đăng nhập"
             android:textColor="#FFEB3B"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>

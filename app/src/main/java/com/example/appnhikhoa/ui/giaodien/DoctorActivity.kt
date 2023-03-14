@@ -15,8 +15,8 @@ import com.example.appnhikhoa.api.ApiServer
 import com.example.appnhikhoa.model.BaseActivity
 import com.example.appnhikhoa.model.GiamDoc
 import com.example.appnhikhoa.model.NhanVien
-import com.example.appnhikhoa.ui.component.DatLich
-import com.example.appnhikhoa.ui.component.NhanTin
+import com.example.appnhikhoa.ui.giaodien.component.DatLich
+import com.example.appnhikhoa.ui.giaodien.component.NhanTin
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.squareup.picasso.Picasso

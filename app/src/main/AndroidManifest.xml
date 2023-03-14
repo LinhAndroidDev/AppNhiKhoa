@@ -38,14 +38,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.component.DatLich"
+            android:name=".ui.giaodien.component.DatLich"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.component.NhanTin"
+            android:name=".ui.giaodien.component.NhanTin"
             android:exported="false" />
         <activity
             android:name=".ui.giaodien.DoctorActivity"

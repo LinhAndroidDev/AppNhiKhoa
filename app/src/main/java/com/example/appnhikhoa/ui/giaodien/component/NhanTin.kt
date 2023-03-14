@@ -1,4 +1,4 @@
-package com.example.appnhikhoa.ui.component
+package com.example.appnhikhoa.ui.giaodien.component
 
 import android.app.Dialog
 import android.content.Intent
